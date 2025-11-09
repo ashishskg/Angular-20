@@ -1,0 +1,12 @@
+<!-- 
+for signal we've to use as 
+    a) imagePath() and not imagePath 
+    b) selectedUser() and not selectedUser 
+-->
+
+<div>
+  <button (click)="onSelectUser()">
+    <img [src]="imagePath()" [alt]="selectedUser().name" />
+    <span>{{ selectedUser().name }}</span>
+  </button>
+</div>
